@@ -1,0 +1,19 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<h4>Witamy w Quizie</h4>
+<br/>
+<h3>Spróbuj odpowiedzieć na 7 pytań</h3>
+<h3>Powodzenia !!!</h3>
+<br/>
+<br/>
+<button class="btn btn-primary sanbutton" @onclick="StartQuiz">Rozpocznij Quiz</button>
+
+
+@code {
+    private void StartQuiz()
+    {
+        NavigationManager.NavigateTo("/question/100");
+    }   
+
+}

@@ -1,0 +1,26 @@
+﻿@page "/question/{Category}"
+@using Quiz.Data
+@inject NavigationManager NavigationManager
+
+<h3>Jak miał na imię Einstein</h3>
+<div class="question">
+    <div class="answer">Albert</div>
+    <div class="answer">Leszek</div>
+    <div class="answer">Damian</div>
+    <div class="answer">Andrzej</div>
+</div>
+
+@code {
+
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public string? Category { get; set; }
+
+    //private QuestionDto? selectedQuestion;
+
+    // protected override void OnInitialized()
+    // {
+    //     question = new QuestionDto {  }
+    // }
+
+}
