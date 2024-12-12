@@ -5,7 +5,7 @@ namespace Quiz.Api.Services
 {
     public class QuizService : IQuizService
     {
-        private const string connString = "Server=.\\HERMANLOCAL;Database=CqrsTp2;Integrated Security=True;TrustServerCertificate=True";
+        private const string connString = "Server=tcp:projektysan.database.windows.net,1433;Initial Catalog=sanquiz;Persist Security Info=False;User ID=aherman;Password=yxFH#D8w1SabJ1TAH99f;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private readonly SqlConnection _sqlConnection;
         private readonly Random _random;
         public QuizService()

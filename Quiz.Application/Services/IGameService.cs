@@ -1,8 +1,8 @@
 ﻿using Quiz.Data;
 
-namespace Quiz.Application.Endpoints
+namespace Quiz.Application.Services
 {
-    public interface IGame
+    public interface IGameService
     {
         Task<QuestionDto?> GetQuestion(int category);
         Task<CheckAnswerDto?> CheckAnswer(string answerId, int category);
